@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>FIT LIFE CONTACTO</title>
+  <meta charset="UTF-8">
+  <meta name="title" content="FIT LIFE">
+  <meta name="description" content="Contacto de FIT LIFE">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="assets/images/logo_large.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" media="print" href="assets/css/print.css" />
+</head>
+
+<body>
+  <header>
+
+    <nav class="navegador">
+
+      <a class="logo" title="Logo FIT LIFE" href="index.html"><img src="assets/images/logo_large.png" width="150"
+          height="40" alt="Logo FitLife"></a>
+      <a class="link-3" href="index.html">Inicio</a>
+      <a class="link-3" href="servicios.html">Servicios</a>
+      <a class="link-3" href="blog.html">Blog</a>
+      <a class="link-3" href="contacto.html">Contacto</a>
+
+    </nav>
+  </header>
+  <div class="menu"></div>
+  <h1 class="tituloForm">Formulario de Contacto</h1>
+  <div>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input name="nombre" id="nombre" type="text" placeholder="Por ejemplo Guillermo" pattern="[a-zA-Z]{1,30}" required
+        autofocus />
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" placeholder="Por ejemplo diseñoMola@gmail.com" required />
+      <label for="edad">Edad:</label>
+      <input name="edad" id="edad" type="number" min="18" max="99" placeholder="Por ejemplo 59" required />
+      <label for="telefono">Teléfono:</label>
+      <input name="numero" type="text" id="telefono" pattern="[0-9]{9}" placeholder="Por ejemplo 666 666 666" required />
+      <label for="mensaje">Mensaje:</label>
+      <textarea name="textarea" id="mensaje" rows="10" cols="50" placeholder="Escribe aquí tu mensaje"></textarea>
+      <div class="bloqueCheck">
+        <input class="checkbox" type="checkbox" name="condiciones" value="Acepto la politica de privacidad de cookies"
+          required />
+        <label class="chechText" for="texto">Acepto la politica de privacidad de cookies</label>
+      </div>
+      <button class="buttonF" id="enviar" name="enviar" type="submit">ENVIAR</button>
+    </form>
+  </div>
+  <div class="centradoN">
+    <p>Si necesitas contactar con nosotros urgentemente estos son nuestros datos de contacto:</p>
+    <p><b>Calle: </b>Polígono de Elche Nº34 1ero Drc</p>
+    <p><b>Teléfono: </b><a class="linkCompra" href="tel:+34622467431">(+34) 622 467 431</a></p>
+    <p><b>Correo: </b><a class="linkCompra"
+        href="mailto:FITLIFEconsultas@outlook.com?Subject=Aquí%20el%20asunto%20del%20mail">FITLIFEconsultas@outlook.com</a>
+    </p>
+  </div>
+  <a class="iconowhatsapp" href="https://wa.me/34671139266"><img src="assets/images/whatsapp.png" width="50" height="50"
+      alt="Icono Whatsapp"></a>
+  <footer>
+    <div>
+      <nav class="footerNav">
+        <div>
+          <a class="link-footer" href="index.html">Inicio</a>
+          <a class="link-footer" href="servicios.html">Servicios</a>
+          <a class="link-footer" href="blog.html">Blog</a>
+          <a class="link-footer" href="contacto.html">Contacto</a>
+        </div>
+        <div>
+          <a href="http://www.w3.org/WAI/WCAG1A-Conformance"
+          title="Explicación del Nivel A de Conformidad">
+        <img height="32" width="88" 
+          src="http://www.w3.org/WAI/wcag1A"
+          alt="Icono de conformidad con el Nivel A, 
+          de las Directrices de Accesibilidad para 
+          el Contenido Web 1.0 del W3C-WAI"></a>
+          <a class="imagen-footer" href="https://www.instagram.com/"><img src="assets/images/instagram.png" width="30"
+              height="30" alt="Logo instagram"></a>
+          <a class="imagen-footer" href="https://es-es.facebook.com/"><img src="assets/images/facebook.png" width="30"
+              height="30" alt="Logo facebook"></a>
+          <a class="imagen-footer" href="https://www.youtube.com/"><img src="assets/images/youtube.png" width="30"
+              height="30" alt="Logo youtube"></a>
+          <a class="imagen-footer" href="https://twitter.com/?lang=es"><img src="assets/images/gorjeo.png" width="30"
+              height="30" alt="Logo twitter"></a>
+          <a class="imagen-footer" href="https://gmail.com/"><img src="assets/images/gmail.png" width="30" height="30"
+              alt="Logo gmail"></a>
+          <a class="imagen-footer" href="https://wa.me/34671139266"><img src="assets/images/logotipo-de-whatsapp.png"
+              width="30" height="30" alt="Logo whattsapp"></a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+
+</html>

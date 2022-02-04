@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@font-face { 
+    font-family: 'Evogria'; 
+    src: local('Evogria'), 
+        url("assets/webfonts/evogria-webfont.woff2") format('woff2'), 
+        url("assets/webfonts/evogria-webfont.woff") format('woff'), 
+        url("assets/webfonts/Evogria.otf") format('truetype');
+}
+:root{
+    --colorPC: #a30303;
+}
+/**********************Etiquetas estandar**********************/
+*{
+  margin:0px; 
+  padding: 0px; 
+  box-sizing: border-box;
+}
+body{
+    background-image: url("../images/fondoContacto.jpg");
+    overflow-x:hidden;
+}
+
+
+h1,h2,h3,h4,h5,h6{ 
+    font-family:'Evogria';
+    color:white;
+    text-align: center;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+cite,em,p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin:1em;
+    color:white;
+    line-height: 1.8em;
+}
+/**********************Blog**********************/
+article{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid white;
+}
+section{
+    float:left;
+    width:70%;
+    background-color: var(--colorPC);
+    border:3px solid white;   
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+/**********************Aside**********************/
+aside{
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: rgb(216, 132, 35);
+    color:black;
+    float: left;
+    margin-right: 1.5em;
+    width: 22%;
+    border-radius:5px;
+    border: solid 3px white;
+}
+.listaAside{
+    list-style-image: url("../images/logo_small_icon_only_inverted.png");
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+    margin-left: 0.1em;
+}
+.listaAside>li>a{
+    color:white;
+}
+.listaAside:visited{
+    color:var(--colorPC);
+}
+.H2Aside{
+    text-align: center;
+    font-family:'Evogria';
+    font-size: 2em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em; 
+    margin-left: 0.5em;
+    color:white; 
+    text-shadow: 3px 3px 2px black;
+}
+/**********************Formulario **********************/
+form{
+    border: var(--colorPC) 5px solid;
+    background-color: grey;
+    padding: 60px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+form> textarea{
+    resize:none;
+    border: solid 2px var(--colorPC);
+    border-radius: 5px;
+}
+.tituloForm{
+    display: inline-flex;
+    background-color: var(--colorPC);
+    margin-top: 1em;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0.1em;
+    border-radius: 20px;
+    border:3px solid white;
+}
+
+label{
+    font-family: "Evogria";
+    font-size: 1.5em;
+    margin:0.7em;
+    color:white;
+    margin-bottom: 1em;
+    display: block;
+    text-shadow: 3px 3px 2px black;
+}
+input{
+    margin-left: 1em;
+    margin-bottom: 1em;
+    height: 2em;
+    border: solid 2px var(--colorPC);
+    border-radius: 5px;
+
+}
+
+.buttonF {
+	display: block;
+	background-color: var(--colorPC);
+	padding: 5px 30px 5px 30px;
+    margin-bottom: 10px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Evogria";
+}
+.bloqueCheck{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+.chechText{
+    font-size: 1.2em;
+    display: inline;
+}
+input#color{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+  }
+.checkbox:checked{
+    background-color: var(--colorPC);
+    border:none;
+}
+/**********************navegador**********************/
+nav {
+    padding: 7px;
+    text-align: right;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+.navegador{
+    height: 100%;
+    background: var(--colorPC);
+    width: 100%;
+    box-shadow: 5px 10px 15px -10px white;
+
+}
+.menu{
+    height: 20px;
+}
+.logo{
+    position:absolute;
+    left:0%;
+    top:0.15%
+}
+/*********************footer**************************/
+.footerNav{
+    height: 100%;
+    background: rgb(182, 182, 182);
+    top: 0px;
+    width: 100%;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.imagen-footer{
+    align-items: center;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 4px;
+    display:inline-block;
+    top: 0.22em;
+    left: 100%;
+}
+/***********************tabla*****************************/
+table{
+    margin: auto;
+    border-collapse: collapse;
+    caption-side: bottom;
+    position: relative;
+    font-family:'Evogria';
+    text-align: center;
+    border: 3px solid white;
+    white-space:nowrap;
+    height: 300px;
+}
+table>caption{
+    color:white;   
+    font-size: 2em; 
+}
+
+tr:nth-child(odd){
+    background-color:rgb(216, 132, 35) ;
+}
+
+tr:nth-child(even){
+    background-color:gray ;
+}
+tr:first-child{
+    background-color: var(--colorPC);
+    
+}
+td,th{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+}
+
+.navVideo{
+  
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+    width: 100%;
+
+    background-color: gray;
+    border-radius: 20%;
+    text-align: center;
+    color: black;
+}
+.navVideo>div{ 
+    margin-top: 0.30em;
+    width:100%;
+    font-size: 110%;
+    margin-right: 4.25em;
+}
+
+
+.VideoButton{
+    background-color: var(--colorPC);
+    color: white;
+    height: 30px;
+    width: 17.5%;
+    border-color: black;
+}
+
+.audios{
+    margin-top: 1em;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    align-items: center;
+}
+.audios>button{
+    
+    width: 15%;
+    background: url('../images/iphone-se-red-wallpaper.jpg');
+    -webkit-background-clip: text;
+    color: transparent;
+
+    /* Other */
+    
+    font-size: 30px;
+    font-weight: 900;
+    -webkit-animation: dynamic 10s infinite alternate linear;
+            animation: dynamic 10s infinite alternate linear;
+    white-space: nowrap;
+
+}
+
+.animacionLogo {
+	animation-duration: 5s;
+	animation-name: animacionLogo;
+	animation-iteration-count: infinite;
+  }
+@keyframes animacionLogo{
+	from {
+		-webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+	}
+  50%{
+		-webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+	} 
+	to {
+		-webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+		}
+}
+
+/******************lista*****************/
+.lista{
+    color:white;
+    list-style:none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/******************links************************/
+.linkCompra{
+    color:rgb(216, 132, 35)
+}
+/*link de nav*/
+.link-3 {
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    position:relative;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+  .link-3:hover {
+    background-color: rgb(216, 132, 35);
+    transition: 0.4s;
+    color: white;
+    padding-top: 0.42%;
+    padding-bottom: 0.42%;
+  }
+
+.link-footer {
+    font-family: 'Oswald', sans-serif;
+    align-items:center;
+    transition: 0.4s;
+    position:relative;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 12px;
+    margin: 0 20px;
+}
+  
+.link-footer:active{
+      color:rgb(216, 132, 35) ;
+}
+/*************Contenedores********************/
+/*contenedor de index*/
+.divPadreIndex{
+    text-align: center;
+}
+/*contenedor index videp*/
+.cajaRoja{
+  
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    background-color:rgba(163,3,3,0.95) ;
+    border-radius: 5px;
+  /* IMPORTANTE */
+  display: inline-block;
+  box-shadow: 10px 10px 124px 20px rgba(163,3,3,0.95);
+}
+/*contenedorAreaHero*/
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+}
+/*contenedor h1 index*/
+.centrado{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color:var(--colorPC);
+    border-radius: 20px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: solid 3px white;
+    animation-duration: 5s;
+	animation-name: animacionLogo;
+	animation-iteration-count: infinite;
+}
+
+animation-duration: 3s;
+animation-name: slidein;
+
+
+@keyframes slidein {
+from {
+  margin-left: 100%;
+  width: 300%
+}
+
+to {
+  margin-left: 0%;
+  width: 100%;
+}
+}
+/*contenedor de los articulos*/
+.articulos{
+    padding-left: 1em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    padding-top: 2em;
+    align-items: center;
+    text-align: justify;
+    overflow: hidden;
+    border-radius: 20px;
+    list-style:none;
+}
+/*contenedor de contacto extra*/
+.centradoN{
+    display:inline-block;
+    background-color: var(--colorPC);
+    margin-top: 5em;
+    position: relative;
+    left: 50%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: solid white 3px;
+}
+/*contenedor iframes*/
+.centradoI{
+   text-align: center;
+   width: 100%;
+}
+/*contenedores flex de servicios*/
+.divDisplay{
+    padding-top:1em;
+    background-color: var(--colorPC);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-bottom: 1em;
+    border-radius: 20px; 
+    margin-bottom: 3em;
+    margin-top: 1em;
+    line-height: 2.5em;
+    width: 510px; 
+    text-align: center;
+    border:3px solid white;
+}
+.divDisplayPRO{
+    padding: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(216, 132, 35) ;
+    border-radius: 20px; 
+    margin-bottom: 2em;
+    margin-top: 1em;
+    line-height: 2.5em;
+    width: 600px; 
+    text-align: center;
+    border:3px solid white;
+}
+.contenedoresDis{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+/*contenedor del scroll de blog*/
+.scroll {
+    border:2px solid white;
+    border-radius: 5px;
+    background-color:  rgb(216, 132, 35) ;
+    width: 150px;
+    height: 150px;
+    overflow: scroll;
+  }
+/*contenedor que centra la servicios*/
+.contenedorCentrado{
+      max-width: 100%;
+      align-items: center;
+      align-content: center;
+      margin: 0 auto;
+  }
+/*diseño areaHero*/
+.areahero{
+    box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
+}
+
+.scrollT{
+
+}
+
+/***************whatsapp*********************/
+.iconowhatsapp{
+    position: fixed;
+    right: 1%;
+    top:85%;
+    transition: 0.5s linear;
+}
+.iconowhatsapp:hover{
+
+transform: rotate(360deg);
+}
+
+/*********Imagenes sin alt****************/
+
+img:not([alt]){
+    border: 1px solid red;
+}
+/**********icono pdf****************/
+a[href$=".pdf"]:after 
+{
+    margin-top: 1em;
+    content: "";
+    background-image:url(../images/pdf.png);
+    background-size: 100% 100%;
+    display: inline-block;
+  
+    /*size of your image*/
+    height: 25px;
+    width:25px;
+}
+/******************Iframes ***************************/
+.videoPC{
+
+}
+.videoMov{
+    display: none;
+    width: 100%;
+}
+.iframeBM{
+    display: none;
+    width: 100%;
+}
+/**************boton tienda ***************************/
+
+.shop
+{
+    font-family: "Evogria";
+    position: relative;
+    bottom: -20%;
+    width: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    transform: translateY(-50%);
+    overflow: hidden;
+    border:3px solid white;
+    border-radius: 10em;
+    box-shadow:2px 5px 16px 5px #0B325E
+}
+
+.shop:before, .shop:after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.shop:before
+{
+    transform: scale(1);
+    background: #E30000;
+    background: linear-gradient(45deg, #E30000 0%, #E04216 34%, #E3840E 100%);
+    background-size: cover;
+    transition: 0.3s ease transform;
+    z-index: 1;
+}
+
+.shop:after
+{   
+    background: #E30000;
+    background: linear-gradient(45deg, #E30000 0%, #E04216 34%, #E3840E 100%);
+    opacity: 0.16;
+    z-index: 2;
+}
+
+.shop div
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.shop div:before, .shop div:after
+{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: "Evogria";
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    padding: 25px 0;
+    transition: 0.3s ease all;
+}
+
+.shop div:before
+{
+    content: "30€/mes";
+    letter-spacing: 0;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.shop div:after
+{
+    content: "Comprar";
+    letter-spacing: -10px;
+    transform: scale(0);
+    opacity: 0;
+}
+.shop div.BAS:before
+{
+    content: "90€/mes";
+    letter-spacing: 0;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.shop div.PRO:before
+{
+    content: "1500€";
+    letter-spacing: 0;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.shop:hover:before
+{
+    transform: scale(1.3);
+}
+
+.shop:hover div:before
+{
+    letter-spacing: 3px;
+    opacity: 0;
+    transform: scale(4);
+}
+
+.shop:hover div:after
+{
+    letter-spacing: 0;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/***********Sombra de texto**************/
+.sombraT{
+    text-shadow: 3px 3px 2px black;
+}
+/************Texto animado ******************/
+.epicT{
+	
+        /* Text Background Effect */
+        
+        background: url('../images/fuentefoto.jpg');
+        -webkit-background-clip: text;
+        color: transparent;
+    
+        /* Other */
+        
+        font-size: 50px;
+        font-weight: 900;
+        -webkit-animation: dynamic 10s infinite alternate linear;
+                animation: dynamic 10s infinite alternate linear;
+        white-space: nowrap;        
+    }
+    .epicTS{
+    
+        /* Text Background Effect */
+        
+        background: url('../images/fuentefoto.jpg');
+        -webkit-background-clip: text;
+        color: transparent;
+    
+        /* Other */
+        
+        font-size: 30px;
+        font-weight: 900;
+        -webkit-animation: dynamic 10s infinite alternate linear;
+                animation: dynamic 10s infinite alternate linear;
+        white-space: nowrap;
+
+        
+    }
+    .epicTSP{
+    
+        /* Text Background Effect */
+        
+        background: url('../images/iphone-se-red-wallpaper.jpg');
+        -webkit-background-clip: text;
+        color: transparent;
+    
+        /* Other */
+        
+        font-size: 30px;
+        font-weight: 900;
+        -webkit-animation: dynamic 10s infinite alternate linear;
+                animation: dynamic 10s infinite alternate linear;
+        white-space: nowrap;
+
+        
+    }
+
+
+    @-webkit-keyframes slice {
+	
+        0% {	line-height: 0%; }
+        
+        100% {	line-height: 100%; }
+        
+    }
+
+
+    @keyframes slice {
+	
+        0% {	line-height: 0%; }
+        
+        100% {	line-height: 100%; }
+        
+    }
+    
+    /* Dynamic Background Animation */
+    
+    @-webkit-keyframes dynamic {
+        
+        0% {	background-position: 0% }
+        
+        100% {	background-position: 100%; }
+        
+    }
+    
+    @keyframes dynamic {
+        
+        0% {	background-position: 0% }
+        
+        100% {	background-position: 100%; }
+        
+    }
+
+/*************** Media queries *****************************/
+@media screen and (max-width: 1024px) {
+    .link-3:hover {
+       
+        padding-top: 0.7%;
+        padding-bottom: 0.7%;
+      }
+    .centrado>h1{
+        font-size:2.5em;
+    }
+    .tituloForm{
+        font-size: 2.5em;
+    }
+    .contenedorCentrado{
+        max-width: 100%
+    }
+    .scrollT{
+        margin: 0 auto;
+        max-width: 90%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        overflow-x: scroll;
+    }
+    .contenedoresDis{
+        flex-wrap:wrap;
+        justify-content: center;
+      }
+      .iconowhatsapp{
+        position: fixed;
+        right: 0.25%;
+        top:80%;
+        transition: 0.5s linear;
+    }
+  .epicT{
+      font-size:30px;
+}
+.H2Aside{
+    font-size: 1.5em;
+}
+.iframeBM{
+    display: none;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .centrado>h1{
+        font-size:2em;
+    }
+    .tituloForm{
+        font-size: 2em;
+    }
+    .videoPC{
+        display: none;
+    }
+    .videoMov{
+        display: block;
+    }
+    .iconowhatsapp{
+        display: none;
+    }
+    .divDisplay{
+        width: 400px;
+    }
+    .divDisplay>h4{
+        font-size: 0.80em;
+    }
+    .divDisplayPRO{
+        width: 420px;
+    }
+    .divDisplayPRO>h4{
+        font-size: 0.73em;
+    }
+    .articulos{
+        width: 100%;
+        margin-top: 1em;
+        display: block;
+    }
+    aside{
+        width: 80%;
+        margin-bottom: 1em;
+        display: block;  
+        margin-left: 3em;
+    }
+    .listaAside{
+        font-size: 1em;
+    }
+    section{
+        width: 95%;
+        margin-bottom: 1em;
+        display: block;
+        margin-left: 0.5em;
+    }
+    .H2Aside{
+        font-size: 1.2em;
+    }
+    form{
+        max-width: 400px;
+        
+    }
+    form> textarea{
+       width: 300px;
+    }
+    .bloqueCheck{
+        font-size: 0.56em;
+    }
+    em{
+        font-size: 1em;
+    }
+    article>h3{
+        font-size: 1em;
+    }
+    .epicT{
+        font-size: 1.1em;
+    }
+    .articulos>section>article>p{
+        font-size: 1em;
+    }
+    .centradoN{
+        margin-top: 8em;
+        width: 90%;
+    }
+    table>caption{
+        font-size: 1.5em;
+    }
+    .scrollT{
+        overflow-x:scroll;
+    }
+    .link-footer {
+        padding: 0 6px;
+        margin: 0 10px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .centrado>h1{
+        font-size:1.2em;
+    }
+    .navegador{
+        padding-top: 3em;
+        
+    }
+    .navegador>.logo{
+        left:30%;
+    
+    }
+    .navegador>a{
+    display:flex;
+    }
+    .link-3:hover {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 0em;
+    margin-right: 0em;
+    }
+    .tituloForm{
+        font-size: 1.2em;
+    }
+    .esconder{
+        display:none;
+    }
+    .scrollT{
+        overflow: hidden;
+    }
+    .iframeBM{
+        display: block;
+    }
+    .iframeB{
+        display: none;
+    }
+}
