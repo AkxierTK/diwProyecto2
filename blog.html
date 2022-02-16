@@ -10,6 +10,8 @@
     <link rel="icon" href="assets/images/logo_large.png" type="image/png" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="print" href="assets/css/print.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/query.js"></script>
 </head>
 
 <body>
@@ -17,15 +19,16 @@
     <header>
 
         <nav class="navegador">
-
             <a class="logo" title="Logo FIT LIFE" href="index.html"><img src="assets/images/logo_large.png" width="150"
-                    height="40" alt="Logo FitLife"></a>
-            <a class="link-3" href="index.html">Inicio</a>
-            <a class="link-3" href="servicios.html">Servicios</a>
-            <a class="link-3" href="blog.html">Blog</a>
-            <a class="link-3" href="contacto.html">Contacto</a>
-
-        </nav>
+                height="40" alt="Logo FitLife"></a>
+            <a class="hamburguer"><img class="burguer"src="assets/images/Menú-hamburguesa-herramienta-practica-o-icono-inutil.png" alt="Hamburguesa" width="40px"></a>
+            <div class="navegador2">
+              <a class="link-3" href="index.html">Inicio</a>
+              <a class="link-3" href="servicios.html">Servicios</a>
+              <a class="link-3" href="blog.html">Blog</a>
+              <a class="link-3" href="contacto.html">Contacto</a>
+            </div>
+          </nav>
     </header>
     <div class="menu"></div>
     <main>
@@ -38,10 +41,10 @@
             <aside>
                 <h2 class="H2Aside">Artículos Semanales</h2>
                 <ul class="listaAside">
-                    <li><a href="#Mejores">Mejores Suplementos</a></li>
-                    <li><a href="#Top">Top 10 ejercicios de Pectoral</a></li>
-                    <li><a href="#errores">5 errores que debes emitar cometer</a></li>
-                    <li><a href="#calcular">¿Como calcular mis calorías diarias ?</a></li>
+                    <li><a id="MejoresA">Mejores Suplementos</a></li>
+                    <li><a id="TopA">Top 10 ejercicios de Pectoral</a></li>
+                    <li><a id="5erroresA">5 errores que debes emitar cometer</a></li>
+                    <li><a id="CalcularA">¿Como calcular mis calorías diarias ?</a></li>
                 </ul>
                 <div class="menu"></div>
             </aside>
@@ -317,6 +320,7 @@
     </main>
     <a class="iconowhatsapp" href="https://wa.me/34671139266"><img src="assets/images/whatsapp.png" width="50"
             height="50" alt="Icono Whatsapp"></a>
+    <img src="assets/images/arrow-up.png" class="flecha" alt="flecha Scroll">
     <footer>
         <div>
             <nav class="footerNav">

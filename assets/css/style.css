@@ -19,7 +19,9 @@ body{
     background-image: url("../images/fondoContacto.jpg");
     overflow-x:hidden;
 }
-
+.hamburguer{
+    display: none;
+}
 
 h1,h2,h3,h4,h5,h6{ 
     font-family:'Evogria';
@@ -517,6 +519,12 @@ to {
     top:85%;
     transition: 0.5s linear;
 }
+.flecha{
+    position: fixed;
+    right: 0%;
+    top:70%;
+    width: 75px;
+}
 .iconowhatsapp:hover{
 
 transform: rotate(360deg);
@@ -915,16 +923,25 @@ a[href$=".pdf"]:after
     .centrado>h1{
         font-size:1.2em;
     }
+    .hamburguer{
+        display: block;
+        position: absolute;
+        top: 1%;
+        left: 90%;
+    }
     .navegador{
         padding-top: 3em;
-        
+        text-align: center;
+    }
+    .navegador2>a{
+        display: block;
     }
     .navegador>.logo{
-        left:30%;
-    
+        float: left;
     }
     .navegador>a{
-    display:flex;
+    display:block;
+
     }
     .link-3:hover {
     padding-top: 0%;
